@@ -1,0 +1,42 @@
+apply from: 'dependencies.gradle'
+
+buildscript {
+    apply from: 'dependencies.gradle'
+
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath gradlePlugins.buildGradle
+        classpath gradlePlugins.kotlin
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+ext {
+    versionCode = 1
+
+    versionMajor = 0
+    versionMinor = 0
+    versionPatch = 1
+}
+
+def getVersionCode() {
+    return rootProject.ext.versionCode
+}
+
+def getVersionName() {
+    return "${rootProject.ext.versionMajor}.${rootProject.ext.versionMinor}.${rootProject.ext.versionPatch}"
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,32 @@
+ext.versions = [
+        buildTools       : '29.0.0',
+        compileSdk       : 28,
+        minSdk           : 19,
+        targetSdk        : 28,
+
+        kotlin           : '1.3.31',
+        gradle           : '3.4.1',
+        androidX         : '1.0.2',
+
+        jUnit            : '4.12',
+        androidTestRunner: '1.2.0',
+        expressoCore     : '3.2.0'
+]
+
+ext.gradlePlugins = [
+        buildGradle: "com.android.tools.build:gradle:$versions.gradle",
+        kotlin     : "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
+]
+
+ext.libraries = [
+        kotlinStdLib        : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$versions.kotlin",
+
+        androidXAppCompat   : "androidx.appcompat:appcompat:$versions.androidX",
+        androidXCoreKTX     : "androidx.core:core-ktx:$versions.androidX",
+
+        androidXJUnitRunner : "androidx.test.runner.AndroidJUnitRunner",
+
+        jUnit               : "junit:junit:$versions.jUnit",
+        androidXTestRunner  : "androidx.test:runner:$versions.androidTestRunner",
+        androidXExpressoCore: "androidx.test.espresso:espresso-core:$versions.expressoCore"
+]

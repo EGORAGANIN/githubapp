@@ -1,0 +1,42 @@
+# Built application files
+build/
+*.apk
+*.ap_
+
+# IntelliJ IDEA/ Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+classes/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Gradle cache
+.gradle
+
+# Android Studio captures folder
+captures/
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+
+# NDK
+.externalNativeBuild
+
+# Others
+tmp/
+*.log
