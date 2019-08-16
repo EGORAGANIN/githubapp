@@ -1,11 +1,88 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/color_vendor_black</item>
+        <item name="colorPrimaryDark">@color/color_vendor_black_dark</item>
+        <item name="colorAccent">@color/color_vendor_white</item>
+        <item name="alertDialogTheme">@style/AlertDialogTheme</item>
+    </style>
+
+    <style name="AppTheme.Splash">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+    
+    <style name="ToolbarStyles" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        <item name="android:elevation">8dp</item>
+        <item name="android:background">?colorPrimary</item>
+        <item name="android:theme">@style/ToolbarTheme</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        <item name="android:colorAccent">@color/color_vendor_white</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="@style/ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="colorAccent">@color/color_vendor_black</item>
+    </style>
+
+    <style name="TextAppearance.AppTheme" parent="TextAppearance.AppCompat" />
+
+    <style name="TextAppearance.AppTheme.H6" parent="TextAppearance.AppTheme">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/color_vendor_black</item>
+    </style>
+
+    <style name="TextAppearance.AppTheme.Subtitle1" parent="TextAppearance.AppTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/color_vendor_black</item>
+    </style>
+
+    <style name="TextAppearance.AppTheme.Subtitle1.Write" parent="TextAppearance.AppTheme.Subtitle1">
+        <item name="android:textColor">@color/color_vendor_white</item>
+    </style>
+
+    <style name="TextAppearance.AppTheme.Body2" parent="TextAppearance.AppTheme">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/color_vendor_black</item>
+    </style>
+
+    <style name="Widget.AppTheme.Button.Rounded" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">144dp</item>
+        <item name="android:minHeight">44dp</item>
+        <item name="cornerRadius">@dimen/padding_medium</item>
+        <!--Text appearance for buttons can't be set in android:textAppearance for it applies before other attributes-->
+        <item name="android:textSize">14sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@color/color_vendor_white</item>
+        <item name="backgroundTint">@color/btn_bg_color_selector</item>
+    </style>
+
+    <style name="Widget.AppTheme.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">144dp</item>
+        <item name="android:minHeight">44dp</item>
+        <item name="cornerRadius">@dimen/padding_large</item>
+        <item name="rippleColor">@android:color/white</item>
+        <!--Text appearance for buttons can't be set in android:textAppearance for it applies before other attributes-->
+        <item name="android:textSize">14sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@color/color_vendor_blue</item>
+        <!--additional attributes for outlined button-->
+        <item name="strokeColor">@color/btn_outlined_stroke_color_selector</item>
+    </style>
+
+    <style name="Widget.AppTheme.ProgressBar" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateTint">@color/color_vendor_black</item>
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">64dp</item>
+    </style>
+
+    <style name="Widget.AppTheme.Body2.Icon" parent="TextAppearance.AppTheme.Body2">
+        <item name="android:drawablePadding">@dimen/padding_extra_small</item>
     </style>
 
 </resources>

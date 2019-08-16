@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/padding_large"
+    android:paddingTop="@dimen/padding_small"
+    android:paddingEnd="@dimen/padding_large"
+    android:paddingBottom="@dimen/padding_small">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/label_forked"
+            style="@style/TextAppearance.AppTheme.Subtitle1.Write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/padding_small"
+            android:background="@drawable/bg_rounded_rectangle_blue"
+            android:text="@string/label_forked" />
+
+        <TextView
+            android:id="@+id/label_private"
+            style="@style/TextAppearance.AppTheme.Subtitle1.Write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rounded_rectangle_orange"
+            android:text="@string/label_private" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/label_name"
+        style="@style/TextAppearance.AppTheme.H6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        tools:text="Repositories name #1" />
+
+    <TextView
+        android:id="@+id/label_description"
+        style="@style/TextAppearance.AppTheme.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_extra_small"
+        android:ellipsize="end"
+        android:maxLines="3"
+        tools:text="Repositories description #1.\nSome text for test" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_extra_small"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/label_star_count"
+            style="@style/Widget.AppTheme.Body2.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_vector_star"
+            tools:text="9" />
+
+        <TextView
+            android:id="@+id/label_fork_count"
+            style="@style/Widget.AppTheme.Body2.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_small"
+            android:drawableStart="@drawable/ic_vector_fork"
+            tools:text="9" />
+
+        <TextView
+            android:id="@+id/label_updated_date"
+            style="@style/Widget.AppTheme.Body2.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_small"
+            android:drawableStart="@drawable/ic_vector_clock"
+            tools:text="2 hour ago" />
+
+        <TextView
+            android:id="@+id/label_repo_size"
+            style="@style/Widget.AppTheme.Body2.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_small"
+            android:drawableStart="@drawable/ic_vector_size"
+            tools:text="50,3 MB" />
+
+        <TextView
+            android:id="@+id/label_language"
+            style="@style/TextAppearance.AppTheme.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_small"
+            tools:text="Kotlin" />
+
+    </LinearLayout>
+
+</LinearLayout>

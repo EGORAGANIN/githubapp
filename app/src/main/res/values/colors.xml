@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+
+    <!--Vendor palette-->
+    <color name="color_vendor_black">#ff333333</color>
+    <color name="color_vendor_black_dark">#ff282828</color>
+    <color name="color_vendor_white">#fffafafa</color>
+    <color name="color_vendor_white_dark">#fff0f0f0</color>
+    <color name="color_vendor_blue">#ff4078c0</color>
+    <color name="color_vendor_orange">#ffc9510c</color>
+
+    <color name="color_background">@color/color_vendor_white_dark</color>
+
 </resources>

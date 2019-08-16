@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/padding_large"
+    android:paddingEnd="@dimen/padding_large">
+
+    <ProgressBar
+        android:id="@+id/progress_loading"
+        style="@style/Widget.AppTheme.ProgressBar"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/label_loading"
+        style="@style/TextAppearance.AppTheme.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_loading"
+        android:layout_marginTop="@dimen/padding_extra_small"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/label_error_message"
+        style="@style/TextAppearance.AppTheme.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_extra_small"
+        android:visibility="gone"
+        android:ellipsize="end"
+        android:maxLines="2"
+        tools:text="@string/label_retry"
+        tools:visibility="gone" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_retry"
+        style="@style/Widget.AppTheme.Button.Rounded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_retry"
+        android:visibility="gone"
+        tools:visibility="gone" />
+
+</LinearLayout>

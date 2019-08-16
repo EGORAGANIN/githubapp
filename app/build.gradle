@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
 
@@ -17,6 +18,11 @@ android {
         versionName rootProject.getVersionName()
 
         testInstrumentationRunner libraries.androidXJUnitRunner
+
+        buildConfigField "String", "ENDPOINT_URL", '"https://api.github.com/"'
+        buildConfigField "String", "OAUTH_CLIENT_ID", '"793e57982eb4dccd6fe9"'
+        buildConfigField "String", "OAUTH_CLIENT_SECRET", '"c04dfa1b4dd4b224d2d2d86526eb0fd7f11c9532"'
+        buildConfigField "String", "OAUTH_REDIDECT_URL", '"githubsample://login"'
     }
 
     buildTypes {
@@ -36,9 +42,37 @@ android {
 dependencies {
 
     implementation libraries.kotlinStdLib
+    implementation libraries.kotlinCoroutinesCore
+    implementation libraries.kotlinCoroutinesAndroid
 
     implementation libraries.androidXAppCompat
     implementation libraries.androidXCoreKTX
+    implementation libraries.material
+    implementation libraries.androidXPaging
+    implementation libraries.room
+    kapt libraries.roomCompiler
+
+    implementation libraries.timber
+    implementation libraries.threeTean
+
+    implementation libraries.dagger
+    kapt libraries.daggerCompiler
+
+    implementation libraries.moxy
+    implementation libraries.moxyAndroidX
+    kapt libraries.moxyCompiler
+
+    implementation libraries.androidAnnottations
+    kapt libraries.androidAnnottationsCompiler
+
+    implementation libraries.cicerone
+
+    implementation libraries.retrofit
+    implementation libraries.gson
+    implementation libraries.gsonConverter
+    implementation libraries.okHttpLogging
+
+    implementation libraries.browserCustomTabs
 
     testImplementation libraries.jUnit
     androidTestImplementation libraries.androidXTestRunner

@@ -1,3 +1,27 @@
 <resources>
+    <!-- Application -->
     <string name="app_name">Github sample</string>
+
+    <!-- ChoiceSignInMethodFragment -->
+    <string name="label_choose_sign_in_method">Choose sign in method</string>
+    <string name="button_sign_in_with_access_token">Sign in using access token</string>
+    <string name="button_sign_in_browser">Sign in using browser</string>
+    <string name="label_loading">Loading…</string>
+    <string name="label_feature_in_development">This feature will be available in the next version of the application.</string>
+    <string name="button_ok">OK</string>
+    
+    <!-- ReposFragment -->
+    <string name="title_user_repos">User repositories</string>
+    <string name="label_retry">Retry</string>
+    <string name="label_forked">Forked</string>
+    <string name="label_private">Private</string>
+    <string name="menu_logout">Logout</string>
+
+    <!-- Exception handling messageResId -->
+    <string name="message_http_401_unauthorized">Authorization required.</string>
+    <string name="message_http_403_forbidden">You do not have access to this resource.</string>
+    <string name="message_http_500_internal_server_error">Service temporary unavailable. Please try again later.</string>
+    <string name="message_unexpected_error">Sorry, an error occurred, we are already working on fixing it.</string>
+    <string name="message_connection_exception">Unable to establish a connection.</string>
+
 </resources>
